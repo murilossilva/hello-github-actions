@@ -1,0 +1,13 @@
+name: Exemplo de um workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  acao_inicial_job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Imprimir Hello Github!
+        run: echo 'Hello Github!'
+      - name: Imprimir Goodbye Github!
+        run: echo 'Goodbye Github!'
